@@ -23,7 +23,7 @@ const currentQuestionIndex = ref(0);
 const answers = ref<boolean[]>([]);
 const quizFinished = ref(false);
 
-const currentZone = computed<FluencyZone>(() => fluencyData[currentZoneIndex.value]);
+const currentZone = computed<FluencyZone>(() => fluencyData[currentZoneIndex.value]!);
 const currentQuestion = computed(() => {
   return {
     text: currentZone.value.questions[currentQuestionIndex.value],
@@ -57,7 +57,8 @@ const checkZoneFluency = () => {
     }
   } else {
     quizFinished.value = true;
-    const resultZone = currentZoneIndex.value > 0 ? fluencyData[currentZoneIndex.value - 1].id : 'pre-agil';
+    const previousZone = fluencyData[currentZoneIndex.value - 1];
+    const resultZone = previousZone ? previousZone.id : 'pre-agil';
     router.push({ name: 'resultado', query: { zone: resultZone } });
   }
 };

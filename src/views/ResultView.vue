@@ -64,7 +64,8 @@ const nextZone = computed<FluencyZone | undefined>(() => {
 });
 
 const isMaxLevel = computed(() => {
-    return userZoneId.value === fluencyData[fluencyData.length - 1].id;
+    const lastZone = fluencyData[fluencyData.length - 1];
+    return !!userZoneId.value && !!lastZone && userZoneId.value === lastZone.id;
 });
 
 </script>
