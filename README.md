@@ -1,48 +1,45 @@
-# .
+# Quiz de Fluência Ágil
 
-This template should help get you started developing with Vue 3 in Vite.
+Este projeto é uma ferramenta interativa de quiz baseada no **Modelo de Fluência Ágil** (Agile Fluency™ Model), criado por Diana Larsen e James Shore. O objetivo é ajudar equipes de desenvolvimento a identificar sua zona de fluência atual e fornecer orientações claras sobre como evoluir para o próximo nível.
 
-## Recommended IDE Setup
+A aplicação foi desenvolvida com base no e-book [O Modelo de Fluência Ágil - Um Breve Guia para o Sucesso com o Ágil](https://www.agilefluency.org/reading.php).
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Funcionalidades
 
-## Recommended Browser Setup
+- **Quiz Interativo**: Responda a uma série de perguntas baseadas nas proficiências de cada zona de fluência.
+- **Avaliação de Zona**: O sistema calcula automaticamente a zona de fluência atual da sua equipe (Focar, Entregar, Otimizar, Fortalecer).
+- **Guia de Evolução**: Receba informações sobre os benefícios e os investimentos necessários para alcançar o próximo nível de fluência.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Tecnologias Utilizadas
 
-## Type Support for `.vue` Imports in TS
+- [Vue.js](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Instalação e Execução
 
-## Customize configuration
+Siga os passos abaixo para executar o projeto localmente.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1. **Clone o repositório:**
 
-## Project Setup
+   ```bash
+   git clone https://github.com/diegoleme/quiz-agile-fluency.git
+   cd quiz-agile-fluency
+   ```
 
-```sh
-npm install
-```
+2. **Instale as dependências:**
 
-### Compile and Hot-Reload for Development
+   ```bash
+   npm install
+   ```
 
-```sh
-npm run dev
-```
+3. **Execute o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+   A aplicação estará disponível em `http://localhost:5173` (ou na porta indicada no terminal).
 
-### Type-Check, Compile and Minify for Production
+## Créditos
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Todo o conceito e conteúdo do modelo de fluência são de autoria de **Diana Larsen** e **James Shore**. Para mais informações, visite o site oficial do [Agile Fluency Project](https://www.agilefluency.org/).
